@@ -1,7 +1,7 @@
 FROM centos/mysql-56-centos7
 USER root
 
-ADD journals-1.0.jar journals-1.0.jar 
+ADD http://jenkins.semperti.local:8081/repository/mosco-releases/com/semperti/trial/journals/4.0.0/journals-4.0.0.jar /root
 
 #COPY sre-bootcamp-sebastian-03112020/ /tmp/
 #RUN chmod -R 777 /tmp/Code
