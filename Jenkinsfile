@@ -1,6 +1,11 @@
 pipeline {
     agent {label 'bc-sebastianmascolo'}
     stages {
+        stage('Etapa ls ') {
+            steps {
+                sh 'ls'
+            }
+        }
         stage('Etapa Test ') {
             steps {
                 sh 'mvn test --file Code/pom.xml'
