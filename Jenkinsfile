@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Etapa DockerHub') {
             steps {
-                sh 'docker build --tag sebastianmascolo/centos0:latest Docker/Dockerfile'
+                sh 'docker build --tag sebastianmascolo/centos0:latest Docker/'
                 sh 'docker push sebastianmascolo/centos0'
             }
 	}
