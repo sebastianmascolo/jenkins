@@ -6,4 +6,4 @@ sleep 3
 mysqld_safe &
 sleep 3
 #mysqladmin -u root password Semperti2020! &
-java -jar journals-4.0.0.jar  &
+java -jar /root/journals-4.0.0.jar  &
