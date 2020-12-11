@@ -1,7 +1,7 @@
 pipeline {
     agent {label 'bc-sebastianmascolo'}
     stages {
-/*        stage('Etapa ls ') {
+        stage('Etapa ls ') {
             steps {
                 sh 'ls'
             }
@@ -23,7 +23,7 @@ pipeline {
                 sh 'mvn versions:set -DnewVersion=4.0.0 -DskipTests --file Code/pom.xml'
                 sh 'mvn clean deploy --file Code/pom.xml'
             }
-        }*/
+        }
         stage('Etapa DockerHub') {
             steps {
                 sh 'docker build --tag sebastianmascolo/centos0:latest Docker/'
