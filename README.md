@@ -1,4 +1,5 @@
 # Rama 6 Subir imagen a Nexus
+https://stackoverflow.com/questions/37205447/run-build-of-machine-a-from-machine-b-using-jenkins
 
 #### Explicacion del Dockerfile:
 

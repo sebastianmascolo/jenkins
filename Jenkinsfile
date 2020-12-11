@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'bc-sebastianmascolo'}
     stages {
         stage('Etapa Test ') {
             steps {
