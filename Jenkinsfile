@@ -24,5 +24,6 @@ pipeline {
                 sh 'docker build --tag sebastianmascolo/centos0:latest .'
                 sh 'docker push sebastianmascolo/centos0'
             }
+	}
     }
 }
