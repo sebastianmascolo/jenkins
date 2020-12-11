@@ -14,13 +14,13 @@ pipeline {
     
         stage('Etapa Snapshot') {
             steps {
-                sh 'mvn versions:set -DnewVersion=4.0.0-SNAPSHOT  --file Code/pom.xml'
+                sh 'mvn versions:set -DnewVersion=4.0.0-SNAPSHOT -DskipTests  --file Code/pom.xml'
                 sh 'mvn clean deploy --file Code/pom.xml'
             }
         }
         stage('Etapa Release') {
             steps {
-                sh 'mvn versions:set -DnewVersion=4.0.0  --file Code/pom.xml'
+                sh 'mvn versions:set -DnewVersion=4.0.0 -DskipTests --file Code/pom.xml'
                 sh 'mvn clean deploy --file Code/pom.xml'
             }
         }
